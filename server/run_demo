@@ -1,0 +1,19 @@
+#!/bin/bash
+# add these conditions to original run_demo
+
+if [ "$AGENT" = "eap" ]; then
+	AGENT_MODULE="eap"
+	AGENT_PORT=3020
+	AGENT_PORT_RANGE=3020-3028
+elif [ "$AGENT" = "john" ]; then
+	AGENT_MODULE="john"
+	AGENT_PORT=3010
+	AGENT_PORT_RANGE=3010-3018
+elif [ "$AGENT" = "mike" ]; then
+	AGENT_MODULE="mike"
+	AGENT_PORT=3030
+	AGENT_PORT_RANGE=3030-3038
+elif [ "$AGENT" = "gsc" ]; then
+	AGENT_MODULE="gsc"
+	AGENT_PORT=3040
+	AGENT_PORT_RANGE=3040-3048
